@@ -38,3 +38,31 @@ set post_max_size = 100M;
 ```
 sudo service nginx restart 
 ```
+**This change did not reflect the domain or endpoint because PHP-fame still need to restart the service**, run:
+```
+service php7.4-fpm restart
+```
+I'm using 7.4, you can customize the version as per you need.
+
+# **To avoid these thin in features make phpinfo file:**
+
+1- Navigate to File Manager under the Files section in your hPanel.
+
+2- Once you’re in public_html directory, click the New File button.
+
+3- Name your file phpinfo.php and press Create.
+
+4- Scroll down and locate the new phpinfo file within the directory, then right-click to Edit.
+
+5- Now, copy and paste the following code into the text editor and press Save.
+```
+ <?php
+phpinfo(); ?>
+```
+
+You should have a phpinfo.php file in your public_html directory by now. So, all that’s left is to access the file by adding /phpinfo.php at the end of your domain name.
+>in laravel project make it in public folder,where the nginx root path is defined.
+
+```
+www.mydomain.com/phpinfo.php
+```
