@@ -22,7 +22,7 @@ where xx is the size (in megabytes) that you want to allow.
 
 >press ctrl+W to search in nano terminal set 
 ```
-       upload_max_filesize = 100M;         
+ upload_max_filesize = 100M;         
 ```
 
 **3- set post_max_size = 100M in php.ini**
