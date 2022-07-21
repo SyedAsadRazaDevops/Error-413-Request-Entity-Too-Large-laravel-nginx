@@ -20,9 +20,9 @@ http {
 Add ‘set upload_max_filesize xxM’ inside the http section in **/etc/php/7.4/fpm/php.ini**,
 where xx is the size (in megabytes) that you want to allow.
 
->press ctrl+W to search in nano terminal 
+>press ctrl+W to search in nano terminal set 
 ```
-      set upload_max_filesize = 100M;         
+       upload_max_filesize = 100M;         
 ```
 
 **3- set post_max_size = 100M in php.ini**
